@@ -120,8 +120,4 @@ The pickle file should contain a dictionary with the following keys:
 - `amazon_beauty`
 - `steam`
 
----
 
-
-In Stage 2, inference runs with a **single Euler step** ($N = 1$).  
-Instead of sampling from Gaussian noise, FAVE starts from a **randomly masked history embedding**, controlled by `--infer_mask_ratio`.
