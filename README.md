@@ -122,14 +122,6 @@ The pickle file should contain a dictionary with the following keys:
 
 ---
 
-## 🔮 Inference
-
-For checkpoint-based one-step inference, use the provided notebook:
-
-```bash
-cd src
-jupyter notebook ckpt_inference.ipynb
-```
 
 In Stage 2, inference runs with a **single Euler step** ($N = 1$).  
 Instead of sampling from Gaussian noise, FAVE starts from a **randomly masked history embedding**, controlled by `--infer_mask_ratio`.
