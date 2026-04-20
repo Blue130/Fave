@@ -1,5 +1,10 @@
 # 🚀 FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation
 
+---
+This repository contains the official implementation of the paper "FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation" (SIGIR 2026).
+
+
+
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 
@@ -119,5 +124,3 @@ The pickle file should contain a dictionary with the following keys:
 - `ml-100k`
 - `amazon_beauty`
 - `steam`
-
-
