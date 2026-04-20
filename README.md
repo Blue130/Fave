@@ -1,6 +1,5 @@
 # 🚀 FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation
 
----
 This repository contains the official implementation of the paper "FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation" (SIGIR 2026).
 
 
