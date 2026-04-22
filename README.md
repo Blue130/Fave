@@ -23,19 +23,6 @@ At the core of FAVE is **Flow-based Average Velocity Establishment**, which lear
 - 🧩 **Two-stage training strategy** for stable learning and effective consolidation
 
 
-## 🔍 Key Ideas
-
-FAVE addresses two major inefficiencies in generative recommendation:
-
-### 1️⃣ Prior Mismatch
-Most generative methods start from **uninformative Gaussian noise**, which is far from the target preference space and therefore requires a long recovery trajectory.
-
-### 2️⃣ Linear Redundancy
-In multi-step flow solvers, a large number of Euler steps are spent traversing low-curvature regions of an almost linear trajectory, resulting in unnecessary computation.
-
-To overcome these issues, FAVE adopts a **two-stage training strategy**.
-
-
 
 ## 🏗️ Two-Stage Training Strategy
 
@@ -123,3 +110,19 @@ The pickle file should contain a dictionary with the following keys:
 - `ml-100k`
 - `amazon_beauty`
 - `steam`
+
+
+## 📝 Citation
+
+If you find this work useful in your research, please cite our SIGIR 2026 paper:
+
+```bibtex
+@misc{shi2026faveflowbasedaveragevelocity,
+      title={FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation}, 
+      author={Ke Shi and Yao Zhang and Feng Guo and Jinyuan Zhang and JunShuo Zhang and Shen Gao and Shuo Shang},
+      year={2026},
+      eprint={2604.04427},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2604.04427}, 
+}
