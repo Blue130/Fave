@@ -1,0 +1,61 @@
+# Steam - Stage 1 (pretraining)
+
+# Dataset and runtime
+dataset: steam
+log_file: log/
+random_seed: 1997
+max_len: 50
+device: cuda
+num_gpu: 1
+
+# Model
+batch_size: 512
+hidden_size: 128
+dropout: 0.1
+emb_dropout: 0.3
+hidden_act: gelu
+num_blocks: 4
+drop_path_rate: 0.2
+
+# Optimization
+epochs: 200
+decay_step: 100
+gamma: 0.1
+metric_ks: [5, 10, 20]
+optimizer: Adam
+lr: 0.001
+weight_decay: 0
+momentum: null
+eval_interval: 1
+patience: 5
+finetune_lr_scale: 1.0e-5
+
+# Flow and sampling
+lambda_uncertainty: 0.001
+eps: 0.001
+sample_N: 30
+lambda_t: 0.001
+dropout_c: 0.1
+eps_reverse: 0.001
+m_logNorm: 1.0
+s_logNorm: 0.6
+s_modsamp: 1.0
+last: 2
+mask_ratio: 1
+sampling_method: mode
+
+# Stage and checkpoint
+stage_mode: pretrain
+ckpt_path: "./best for steam copy/pretrain_best_pretrainw04.pt"
+
+# Objectives and masking
+Loss_Alpha: 0.4
+Loss_Beta: 0.4
+loss_aux_weight: 0.2
+loss_straight_weight: 0.6
+train_mask_ratio: 0.4
+infer_mask_ratio: 0.4
+gamma_init: 1.0e-6
+mask_end: 0.3
+loss_pretrain_weight: 0.4
+
